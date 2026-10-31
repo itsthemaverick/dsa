@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Beginner-friendly C data structures practicals with readable code and explanations.">
+  <title>DSA Practical Library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="DSA Practical Library home">
+      <span class="brand-mark">C</span>
+      <span>DSA <span class="brand-muted">/ PRACTICALS</span></span>
+    </a>
+    <div class="top-actions">
+      <span class="edition">SECOND YEAR · C PROGRAMMING</span>
+      <button class="theme-button" id="themeButton" type="button" aria-label="Switch colour theme">
+        <span id="themeIcon">☾</span><span id="themeLabel">Dark mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="intro">
+      <div class="intro-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> YOUR DSA REVISION SPACE</div>
+        <h1>Understand the logic.<br><span>Then write the code.</span></h1>
+        <p>Nine C practicals, rewritten with clearer names, smaller steps and comments that explain the reason behind the code.</p>
+        <div class="intro-meta">
+          <span><strong id="programCount">09</strong> practicals</span>
+          <i></i><span>Beginner-friendly C</span><i></i><span>Copy-ready programs</span>
+        </div>
+      </div>
+      <div class="intro-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="art-core"><span>{ }</span><small>LEARN BY BUILDING</small></div>
+        <span class="float-chip chip-one">01 · SEARCH</span>
+        <span class="float-chip chip-two">08 · TREES</span>
+        <span class="float-chip chip-three">09 · GRAPHS</span>
+      </div>
+    </section>
+
+    <section class="workspace" aria-label="Practical library">
+      <aside class="sidebar">
+        <div class="sidebar-heading">
+          <span class="section-kicker">LIBRARY</span>
+          <span class="count-pill" id="visibleCount">09</span>
+        </div>
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="Find a practical..." autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+        <div class="filter-label">TOPICS</div>
+        <nav class="topic-filters" id="topicFilters" aria-label="Filter by topic"></nav>
+        <div class="sidebar-note">
+          <span class="note-icon">✳</span>
+          <div><strong>Study tip</strong><p>Read the idea first. Trace the functions. Then try writing the program without looking.</p></div>
+        </div>
+      </aside>
+
+      <section class="content-area">
+        <div class="content-heading">
+          <div><div class="section-kicker">SELECTED PRACTICAL</div><h2 id="selectedTitle">Linear & Binary Search</h2><p id="selectedSubtitle">Find a roll number in an array</p></div>
+          <span class="level-tag" id="selectedLevel">BEGINNER</span>
+        </div>
+        <div class="practical-tabs" role="tablist" aria-label="Practical sections">
+          <button class="tab active" id="codeTab" type="button" role="tab" aria-selected="true">Code</button>
+          <button class="tab" id="guideTab" type="button" role="tab" aria-selected="false">Understand it</button>
+        </div>
+        <section id="codePanel" class="panel" role="tabpanel">
+          <div class="code-toolbar">
+            <div class="file-label"><span class="file-icon">C</span><span id="fileName">search.c</span><span class="file-status">C SOURCE</span></div>
+            <button class="copy-button" id="copyButton" type="button"><span>▢</span> Copy code</button>
+          </div>
+          <pre class="code-window"><code id="codeBlock"></code></pre>
+          <div class="code-footer"><span><span class="green-dot"></span> Readable version</span><span id="lineCount">0 lines</span></div>
+        </section>
+        <section id="guidePanel" class="panel guide-panel" role="tabpanel" hidden>
+          <div class="guide-intro"><span class="guide-symbol">◎</span><div><div class="section-kicker">THE BIG IDEA</div><p id="ideaText"></p></div></div>
+          <h3>How the program works</h3>
+          <ol class="steps-list" id="stepsList"></ol>
+          <div class="complexity-card"><span class="complexity-icon">⌁</span><div><small>TIME / SPACE COMPLEXITY</small><strong id="complexityText"></strong></div></div>
+          <div class="remember-card"><strong>What to remember</strong><p id="rememberText"></p></div>
+        </section>
+        <div class="bottom-navigation">
+          <button class="nav-button" id="previousButton" type="button">← Previous</button>
+          <span id="positionLabel">01 / 09</span>
+          <button class="nav-button next-button" id="nextButton" type="button">Next practical →</button>
+        </div>
+      </section>
+    </section>
+    <footer><span>DSA PRACTICAL LIBRARY</span><span>Made for understanding, not just copying.</span></footer>
+  </main>
+  <script src="programs.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
